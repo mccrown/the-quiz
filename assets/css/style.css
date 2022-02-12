@@ -34,12 +34,3 @@ header div a {
     font-weight: bolder;
     padding-bottom: 75px;
 }
-
-.page-content {
-    display: flex;
-    margin-top: 100px;
-    justify-content: center;
-    position: absolute;
-    left: 50%;
-    top: 25%;
-}

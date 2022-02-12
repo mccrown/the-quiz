@@ -16,7 +16,25 @@
         <div class="time-left">Time left:</div>
         
     </header>
+    <!-- start quiz button-->
+    <div class="start-btn"><button>Start Quiz</button></div>
 
+    <div class="info-box">
+        <div class="info-title"><span>Rules of 'The Quiz'</span></div>
+        <div class="info-list">
+            <ol>
+                <li class="info">You will have 100 seconds to complete the quiz.</li>
+                <li class="info">You will only be able to make one selection per question.</li>
+                <li class="info">Your score will be based on number of correct answers</li>
+            </ol>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!--quiz section-->
     <main class="page-content" id="page-content">
         <div class="que-text">
             <!-- Insert question from JavaScript-->
@@ -24,7 +42,16 @@
         <div class="option-list">
             <!-- Insert options from JavaScript-->
         </div>
+
+        <!--footer of quiz box-->
+        <footer>
+            <div class="total-que">
+                <!--insert question counter-->
+            </div>
+            <button class="next_btn">Next Question</button>
+        </footer>
     </main>
+
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
