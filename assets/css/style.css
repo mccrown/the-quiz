@@ -18,7 +18,7 @@ body {
 
 header {
     background-color: var(--secondary);
-    border-bottom: 5px solid black;
+    border-bottom: 1px solid black;
     height: 100px;
 }
 
@@ -28,9 +28,11 @@ header div a {
     padding: 30px 25px;
 }
 
-header h1 {
+.time-left, .timer-sec {
     padding-right: 50px;
     float: right;
+    font-weight: bolder;
+    padding-bottom: 75px;
 }
 
 .page-content {
