@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #44e9ff;
+    --secondary: #153ca8;
+    --grey: #28292c;
+}
+
+body {
+    background-color: var(--primary);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: var(--secondary);
+    border-bottom: 5px solid black;
+    height: 100px;
+}
+
+header div a {
+    display: block;
+    color: black;
+    padding: 30px 25px;
+}
+
+header h1 {
+    padding-right: 50px;
+    float: right;
+}
+
+.page-content {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+}
