@@ -350,9 +350,25 @@ footer button.show{
     font-weight: 500;
 }
 
-.result_box .score_text form {
-    padding: 0 4px;
-    font-weight: 600;
+.result_box .score_text form input {
+    margin: 20px 0;
+    display: flex;
+    height: 75px;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+}
+.result_box .score_text form button {
+    display: flex;
+    margin: 20px 0;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    transition: all 0.3s ease;
 }
 
 .result_box .buttons{

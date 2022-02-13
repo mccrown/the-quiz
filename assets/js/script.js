@@ -206,14 +206,17 @@ function showResult(){
     if (userScore > 3){ // if user scored more than 3
         //creating a new span tag and passing the user score number and total question number
         let scoreTag = '<span>And congrats! , You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
-        let highTag = '<form> Save your highscore of ' + userScore + '<br> Enter your Initals: <br> <input type="text" name="initials"></form>';
+        let highTag = '<form> Save your highscore of ' + userScore + ". " + '<br> Enter your Initals: <br> <input type="text" name="initials" id="initials"> <button type="button" id="submit">Submit</button></form>';
         scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
         highScore.innerHTML = highTag;
+        
         
     }
     else if(userScore > 1){ // if user scored more than 1
         let scoreTag = '<span>and nice , You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        let highTag = '<form> Save your highscore of ' + userScore + ". " + '<br> Enter your Initals: <br> <input type="text" name="initials" id="initals"> <button type="button" id="submit">Submit</button></form>';
         scoreText.innerHTML = scoreTag;
+        highScore.innerHTML = highTag;
         
     }
     else{ // if user scored less than 1
@@ -221,7 +224,23 @@ function showResult(){
         scoreText.innerHTML = scoreTag;
         
     }
+    var submitButton = document.querySelector("#submit");
+    var initials = document.querySelector("#initials");
+
+    submitButton.addEventListener("click", function() {
+
+    var highscore = {
+        initials: initials.value.trim(),
+        score: userScore
+    };
+    localStorage.setItem('highscore', JSON.stringify(highscore));
+
+});
+    
 }
+
+
+
 
 function startTimer(time){
     counter = setInterval(timer, 1000);
