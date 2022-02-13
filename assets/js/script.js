@@ -229,18 +229,15 @@ function showResult(){
 
     submitButton.addEventListener("click", function() {
 
-    var highscore = {
+    var highscore = [ {
         initials: initials.value.trim(),
         score: userScore
-    };
+    }];
     localStorage.setItem('highscore', JSON.stringify(highscore));
 
 });
     
 }
-
-
-
 
 function startTimer(time){
     counter = setInterval(timer, 1000);

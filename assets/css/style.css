@@ -15,6 +15,12 @@ body{
     background: #007bff;
 }
 
+header a {
+        color: black;
+        font-size: 50px;
+        font-weight: bolder;
+}
+
 .start_btn,
 .info_box,
 .quiz_box,
