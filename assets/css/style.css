@@ -1,7 +1,9 @@
-* {
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -10,34 +12,12 @@
     --grey: #28292c;
 }
 
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+body{
+    background: var(--secondary);
 }
-
-header {
-    background-color: var(--secondary);
-    border-bottom: 1px solid black;
-    height: 100px;
-}
-
-header div a {
-    display: block;
-    color: black;
-    padding: 30px 25px;
-}
-
-.time-left, .timer-sec {
-    float: right;
-    font-weight: bolder;
-    color: var(--secondary);
-    background: #cce5ff;
-    border: 1px solid #b8daff;
-    height: 45px;
-    padding: 0 8px;
-    border-radius: 5px;
+::selection{
+    color: #fff;
+    background: var(--secondary);
 }
 
 .start-btn,
