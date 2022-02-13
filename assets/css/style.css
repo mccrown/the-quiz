@@ -343,6 +343,18 @@ footer button.show{
     font-weight: 600;
 }
 
+.result_box .score_text form {
+    display: flex;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.result_box .score_text form {
+    padding: 0 4px;
+    font-weight: 600;
+}
+
 .result_box .buttons{
     display: flex;
     margin: 20px 0;
