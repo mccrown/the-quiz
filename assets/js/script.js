@@ -216,15 +216,13 @@ function showResult(){
     }
     var submitButton = document.querySelector("#submit");
     var initials = document.querySelector("#initials");
-    var ID = 0;
 
     submitButton.addEventListener("click", function() {
-        ID++;
+
 
     var highscore =  {
         initials: initials.value.trim(),
         score: userScore,
-        ID: ID
     };
     highscoreArray(highscore);
 
@@ -236,8 +234,7 @@ var scoreList = [];
 var highscoreArray = function(userinfo) {
     scoreList.push(userinfo);
     console.log(scoreList);
-
-    localStorage.setItem("highscores", JSON.stringify(scoreList));
+    localStorage.setItem("highscores", JSON.stringify(scoreList));  
 }
 
 function startTimer(time){
@@ -276,3 +273,5 @@ function queCounter(index){
     let totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }
+
+
