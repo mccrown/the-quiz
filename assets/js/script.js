@@ -229,8 +229,8 @@ function showResult(){
 });
     
 }
-var loading = localStorage.getItem("highscores");
-var scoreList = [loading];
+
+var scoreList = [];
 // save highscore to array
 var highscoreArray = function(userinfo) {
     scoreList.push(userinfo);
