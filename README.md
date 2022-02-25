@@ -4,6 +4,9 @@ This quiz gives you 100 seconds to answer 5 questions, records and displays your
 
 ## Github/Deployed URL
 
+- Deployed URL: https://mccrown.github.io/the-quiz/
+- Github: https://github.com/mccrown/the-quiz
+
 ### Screenshots
 
 ![_C__Users_conne_Desktop_projects_the-quiz_index html](https://user-images.githubusercontent.com/6404921/155657628-4f805c27-eb8c-4cd3-8217-3d4609d4f297.png)
